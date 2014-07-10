@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML課題フォーム</title>
+</head>
+<body>
+    <table border="1">
+    <thead>
+	    <tr>
+            <th width="100">項目名</th>
+            <th width="300">入力項目</th>
+            <th width="500">仕様</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>名前</td>
+            <td><input type="text" name="fullname" value="テキスト入力欄"></td>
+            <td>name値：fullname</td>
+        </tr>
+        <tr>
+            <td>パスワード</td>
+            <td><input type="password" name="password" value="11111111"></td>
+            <td>（パスワード形式）<br>name値：password</td>
+        </tr>
+        <tr>
+            <td>メッセージ</td>
+            <td><textarea name="message" cols="30" rows="5">複数業のテキスト入力欄</textarea>
+            <td>サイズ：col=30、row=5<br>name値：message</td>
+        </tr>
+        <tr>
+            <td>性別</td>
+            <td>
+               <input type="radio" name="sex" value="m">男性
+               <input type="radio" name="sex" value="f">女性
+            </td>
+            <td>リスト内容：男性、女性<br>name値：sex<br>value値：m,f</td>
+        </tr>
+        <tr>
+            <td>趣味</td>
+            <td>
+               <input type="checkbox" name="hobby" value="1" checked>スポーツ
+               <input type="checkbox" name="hobby" value="2">読書
+               <input type="checkbox" name="hobby" value="3">なし
+            </td>
+            <td>リスト内容：スポーツ、読書、なし<br>name値：hobby<br>value値：1,2,3</td>
+        </tr>
+        <tr>
+            <td>職業</td>
+            <td>
+                <select name="job">
+                    <option value="pg">PG</option>
+                    <option value="se">SE</option>
+                    <option value="pm">PM</option>
+                </select>
+            </td>
+            <td>（プルダウン・単一選択）<br>name値：job<br>value値：pg,se,pm</td>
+        </tr>
+        <tr>
+            <td>好きな食べ物</td>
+            <td>
+                <select name="favorite" size="5" multiple>
+                    <option value="apple">りんご</option>
+                    <option value="banana">バナナ</option>
+                    <option value="ichigo">いちご</option>
+                    <option value="melon">メロン</option>
+                    <option value="orange">オレンジ</option>
+                </select>
+            </td>
+            <td>（リスト形式：複数選択可能）<br>リスト内容：りんご、バナナ、いちご、メロン、オレンジ<br>name値：favorite value値：apple,banana,ichigo,melon,orange</td>
+        </tr>
+        <tr>
+            <td>ファイル選択</td>
+            <td><input type="file" name="attach_file"></td>
+            <td>name値：attach_file</td>
+        </tr>
+        <tr>
+            <td>隠しデータ</td>
+            <td><input type="hidden" name="user_id" value="ecorange">（画面上には表示されません）</td>
+            <td>name値：user_id<br>value値：ecorange</td>
+        </tr>
+        <tr>
+            <td>ボタン</td>
+            <td>
+               <input type="submit">
+               <input type="reset">
+            </td>
+            <td>送信用のボタンとリセット用ボタン</td>
+        </tr>
+    </tbody>
+    </table>
+</body>
+</html>
